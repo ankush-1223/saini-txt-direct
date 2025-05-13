@@ -49,7 +49,7 @@ bot = Client(
 
 AUTH_USER = os.environ.get('AUTH_USERS', '6831195071').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
-CHANNEL_OWNERS = {}
+CHANNEL_OWNERS = {7526345865}
 CHANNELS = os.environ.get('CHANNELS', '').split(',')
 CHANNELS_LIST = [int(channel_id) for channel_id in CHANNELS if channel_id.isdigit()]
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
